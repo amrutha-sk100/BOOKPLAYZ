@@ -1,4 +1,4 @@
-# BOOKPLAYZ -- am
+# BOOKPLAYZ
 
 1️⃣ PLANNING PHASE
 ✔ Finalize Tech Stack (Page 1)
