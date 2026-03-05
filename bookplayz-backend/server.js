@@ -5,12 +5,25 @@ const db = require("./config/db");
 
 const authRoutes = require("./routes/auth");
 
+const turfRoutes = require("./routes/turf");
+
+const bookingRoutes = require("./routes/booking");
+
+const paymentRoutes = require("./routes/payment");
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
+
+app.use("/api/turfs", turfRoutes);
+
+
+app.use("/api/bookings", bookingRoutes);
+
+app.use("/api/payment", paymentRoutes);
 
 app.get("/", (req, res) => {
     res.send("BookPlayz Backend Running 🚀");
